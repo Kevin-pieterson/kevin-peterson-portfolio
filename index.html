@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kevin Peterson — Cybersecurity Intern</title>
+<meta name="description" content="Kevin Peterson — Cybersecurity Intern. HND in Cybersecurity & Networking, CCNA, MCSA certified. Security monitoring, network defense, SOC labs.">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpolygon points='50,3 95,27 95,73 50,97 5,73 5,27' fill='%230a0a0f' stroke='%238b5cf6' stroke-width='4'/%3E%3Ctext x='50' y='62' font-family='Arial' font-weight='700' font-size='38' fill='%238b5cf6' text-anchor='middle'%3EKP%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===================== ICON SPRITE ===================== -->
+<svg style="display:none">
+  <defs>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.05c.53-1 1.84-2.05 3.78-2.05 4.04 0 4.79 2.66 4.79 6.12V21h-4v-5.4c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.86V21h-4V9Z"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.64-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.84-2.35 4.69-4.58 4.93.36.31.68.92.68 1.86v2.76c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path fill="currentColor" d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm9 7.2L4.4 7H19.6L12 12.2ZM3 8.4V18h18V8.4l-8.46 5.92a1 1 0 0 1-1.08 0L3 8.4Z"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.62 10.8a14.6 14.6 0 0 0 6.58 6.58l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.4 21 3 13.6 3 4.5a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.25 1.02l-2.2 2.2Z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3a1 1 0 0 1 1 1v9.59l3.3-3.3a1 1 0 1 1 1.4 1.42l-5 5a1 1 0 0 1-1.4 0l-5-5a1 1 0 1 1 1.4-1.42l3.3 3.3V4a1 1 0 0 1 1-1ZM4 19a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1Z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="currentColor" d="M5 12a1 1 0 0 1 1-1h10.59l-3.3-3.3a1 1 0 1 1 1.42-1.4l5 5a1 1 0 0 1 0 1.4l-5 5a1 1 0 1 1-1.42-1.4l3.3-3.3H6a1 1 0 0 1-1-1Z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path fill="currentColor" d="M3 6h18v2H3V6Zm0 5h18v2H3v-2Zm0 5h18v2H3v-2Z"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path fill="currentColor" d="M6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12 19 6.4 17.6 5 12 10.6 6.4 5Z"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 16a6 6 0 1 1 6-6 6 6 0 0 1-6 6Zm0-9.5A3.5 3.5 0 1 0 15.5 12 3.5 3.5 0 0 0 12 8.5Z"/></symbol>
+    <symbol id="i-network" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a3 3 0 0 1 3 3 3 3 0 0 1-1.7 2.7L14 10h3a3 3 0 1 1 0 2h-3l-.7 2.3A3 3 0 1 1 11 16.6l-2-2.6H6a3 3 0 1 1 0-2h3l2-2.6A3 3 0 0 1 9 7a3 3 0 0 1 3-5Z"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><path fill="currentColor" d="M10.5 3a7.5 7.5 0 0 1 5.92 12.1l4.74 4.74-1.42 1.42-4.74-4.74A7.5 7.5 0 1 1 10.5 3Zm0 2a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11Z"/></symbol>
+    <symbol id="i-zap" viewBox="0 0 24 24"><path fill="currentColor" d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path fill="currentColor" d="M20 6 9 17l-5-5 1.4-1.4L9 14.2l9.6-9.6L20 6Z"/></symbol>
+    <symbol id="i-ext" viewBox="0 0 24 24"><path fill="currentColor" d="M14 3h7v7h-2V6.4l-9.3 9.3-1.4-1.4L17.6 5H14V3ZM5 5h6v2H7v10h10v-4h2v6H5V5Z"/></symbol>
+    <symbol id="i-server" viewBox="0 0 24 24"><path fill="currentColor" d="M4 4h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm2.5 2.5a1 1 0 1 0 0 2 1 1 0 0 0 0-2ZM4 14h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1Zm2.5 2.5a1 1 0 1 0 0 2 1 1 0 0 0 0-2Z"/></symbol>
+    <symbol id="i-terminal" viewBox="0 0 24 24"><path fill="currentColor" d="M3 4h18a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm1 2v12h16V6H4Zm2.7 2.3 3 3-3 3-1.4-1.4L6.9 11.3 5.3 9.7 6.7 8.3ZM11 14h6v2h-6v-2Z"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a4 4 0 0 1 4 4v3h1a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1h1V6a4 4 0 0 1 4-4Zm0 2a2 2 0 0 0-2 2v3h4V6a2 2 0 0 0-2-2Zm0 9a1.5 1.5 0 0 0-.6 2.88V18h1.2v-2.12A1.5 1.5 0 0 0 12 13Z"/></symbol>
+    <symbol id="i-database" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2c4.97 0 9 1.34 9 3s-4.03 3-9 3-9-1.34-9-3 4.03-3 9-3ZM3 8.5C3 10.16 7.03 11.5 12 11.5s9-1.34 9-3.5v3c0 1.66-4.03 3-9 3s-9-1.34-9-3v-3Zm0 6.5c0 1.66 4.03 3 9 3s9-1.34 9-3v3c0 1.66-4.03 3-9 3s-9-1.34-9-3v-3Z"/></symbol>
+    <symbol id="i-branch" viewBox="0 0 24 24"><path fill="currentColor" d="M6 3a2.5 2.5 0 1 1-1 4.8v6.4a2.5 2.5 0 1 1-2 0V7.8A2.5 2.5 0 0 1 6 3Zm0 13.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1ZM5.5 5.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0ZM17 7a2.5 2.5 0 1 1-1.6 4.43c-.4 2.7-2.43 4.6-5.1 5.07l.3 1.97-2 .3-.5-3.3a1 1 0 0 1 .84-1.14c2.36-.36 3.9-1.9 4.26-4.3A2.5 2.5 0 0 1 17 7Zm0 1.5a1 1 0 1 0 0 2 1 1 0 0 0 0-2Z"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2 9 5v10l-9 5-9-5V7l9-5Zm0 2.3L5.4 8 12 11.7 18.6 8 12 4.3ZM4 9.7v7.1l7 3.9v-7.1L4 9.7Zm16 0-7 3.9v7.1l7-3.9V9.7Z"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2 4 5v6c0 5 3.4 8.7 8 11 4.6-2.3 8-6 8-11V5l-8-3Zm0 2.2 6 2.25v4.4c0 3.9-2.4 6.9-6 8.85-3.6-1.95-6-4.95-6-8.85v-4.4l6-2.25Zm-1.1 9.4-2.4-2.4 1.4-1.4 1 1 3.6-3.6 1.4 1.4-5 5Z"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.93 8h-3.06a14.6 14.6 0 0 0-1.2-5.32A8.02 8.02 0 0 1 18.93 10ZM12 4.06c.85 1.2 1.5 3 1.78 5.94H10.2C10.5 7.06 11.15 5.26 12 4.06ZM4.06 12h3.05c.07 1.96.36 3.78.86 5.32A8.02 8.02 0 0 1 4.06 12Zm0-2A8.02 8.02 0 0 1 7.97 4.68c-.5 1.54-.79 3.36-.86 5.32H4.06Zm5.85 7.94c-.5-1.2-.85-3-.92-5.94h6.04c-.07 2.94-.42 4.74-.92 5.94-.62 1.4-1.34 2.06-2.1 2.06s-1.48-.66-2.1-2.06Zm5.86-1.62c.5-1.54.79-3.36.86-5.32h3.05a8.02 8.02 0 0 1-3.91 5.32Z"/></symbol>
+  </defs>
+</svg>
+
+<!-- ===================== BACKDROP ===================== -->
+<div class="grid-backdrop" aria-hidden="true"></div>
+
+<!-- ===================== HEADER / NAV ===================== -->
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a href="#top" class="logo">KEVIN<span>PETERSON</span></a>
+
+    <nav class="nav" id="primary-nav">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#certificates" class="nav-link">Certificates</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <a href="#contact" class="btn btn-ghost btn-sm header-cta">Let's Connect</a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <svg class="icon" id="nav-toggle-icon"><use href="#i-menu"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="home">
+  <div class="container hero-grid">
+
+    <div class="hero-social" aria-label="Social links">
+      <a href="https://linkedin.com/in/kevin-peterson-cybersecurity" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon"><use href="#i-linkedin"/></svg></a>
+      <a href="https://github.com/Kevin-pieterson" target="_blank" rel="noopener" aria-label="GitHub"><svg class="icon"><use href="#i-github"/></svg></a>
+      <a href="mailto:pietersonk489@gmail.com" aria-label="Email"><svg class="icon"><use href="#i-mail"/></svg></a>
+    </div>
+
+    <div class="hero-copy">
+      <p class="eyebrow">Cyber Security <span>Intern</span></p>
+      <h1 class="hero-title">KEVIN<br><span>PETERSON</span></h1>
+      <p class="hero-tagline">Defend. Detect. Respond.</p>
+      <p class="hero-sub">Entry-level cybersecurity professional building safer digital systems — one lab, one log, one detection rule at a time.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">Explore Projects <svg class="icon"><use href="#i-arrow"/></svg></a>
+        <a href="assets/Kevin_Peterson_CV.pdf" download class="btn btn-outline">Download CV <svg class="icon"><use href="#i-download"/></svg></a>
+      </div>
+    </div>
+
+    <div class="hero-photo-wrap">
+      <div class="hero-ring r1"></div>
+      <div class="hero-ring r2"></div>
+      <div class="hero-photo">
+        <img src="assets/profile-placeholder.svg" alt="Kevin Peterson" id="hero-photo-img">
+      </div>
+      <span class="scan-line" aria-hidden="true"></span>
+    </div>
+
+    <ul class="hero-features">
+      <li><span class="hex"><svg class="icon"><use href="#i-target"/></svg></span>Penetration Testing</li>
+      <li><span class="hex"><svg class="icon"><use href="#i-network"/></svg></span>Network Security</li>
+      <li><span class="hex"><svg class="icon"><use href="#i-search"/></svg></span>Threat Analysis</li>
+      <li><span class="hex"><svg class="icon"><use href="#i-zap"/></svg></span>Incident Response</li>
+    </ul>
+
+    <div class="hero-stats">
+      <div class="stat"><svg class="icon"><use href="#i-shield"/></svg><div><strong>19</strong><span>Age</span></div></div>
+      <div class="stat"><svg class="icon"><use href="#i-box"/></svg><div><strong>4</strong><span>Projects</span></div></div>
+      <div class="stat"><svg class="icon"><use href="#i-check"/></svg><div><strong>7</strong><span>Certificates</span></div></div>
+      <div class="stat"><svg class="icon"><use href="#i-server"/></svg><div><strong>2+ yrs</strong><span>Training</span></div></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================== ABOUT ===================== -->
+<section class="section" id="about">
+  <div class="container about-grid">
+    <div class="about-copy reveal">
+      <p class="kicker">// Get to know me</p>
+      <h2 class="section-title">About <span>Me</span></h2>
+      <p class="about-bio">I'm an entry-level cybersecurity professional with an HND in Cybersecurity and Networking, backed by industry certifications including CCNA, MCSA, and a certificate in Ethical Hacking. My hands-on experience spans security monitoring, threat detection, vulnerability assessment, incident response fundamentals, and log analysis using KQL. I'm comfortable administering Windows Server and Active Directory environments, managing Linux systems, and configuring networks — and I'm currently preparing for the Microsoft SC-200 certification while actively looking for a Cybersecurity Internship.</p>
+
+      <dl class="about-info">
+        <div><dt>Name</dt><dd>Kevin Peterson</dd></div>
+        <div><dt>Age</dt><dd>19</dd></div>
+        <div><dt>Education</dt><dd>HND in Cybersecurity &amp; Networking, 2024–2026</dd></div>
+        <div><dt>Location</dt><dd>Kotugoda, Sri Lanka</dd></div>
+      </dl>
+
+      <a href="assets/Kevin_Peterson_CV.pdf" download class="btn btn-outline">Download CV <svg class="icon"><use href="#i-download"/></svg></a>
+    </div>
+
+    <div class="about-photo reveal">
+      <div class="hero-ring r1 small"></div>
+      <div class="about-photo-frame">
+        <img src="assets/profile-placeholder.svg" alt="Kevin Peterson portrait">
+      </div>
+    </div>
+
+    <div class="about-stats reveal">
+      <div class="mini-stat"><strong>4</strong><span>Projects Completed</span></div>
+      <div class="mini-stat"><strong>7</strong><span>Certificates Earned</span></div>
+      <div class="mini-stat"><strong>12+</strong><span>Tools &amp; Technologies</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SKILLS ===================== -->
+<section class="section section-alt" id="skills">
+  <div class="container">
+    <p class="kicker reveal">// What I work with</p>
+    <h2 class="section-title reveal">My <span>Skills</span></h2>
+
+    <div class="skills-grid">
+      <div class="skills-bars reveal">
+        <h3 class="skills-subhead">Technical Skills</h3>
+
+        <div class="bar-item">
+          <div class="bar-label"><span>Network Security</span><em>82%</em></div>
+          <div class="bar-track"><div class="bar-fill" style="--val:82%"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>Systems Administration (Windows Server / AD)</span><em>85%</em></div>
+          <div class="bar-track"><div class="bar-fill" style="--val:85%"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>SOC &amp; Threat Detection</span><em>78%</em></div>
+          <div class="bar-track"><div class="bar-fill" style="--val:78%"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>Linux Administration</span><em>80%</em></div>
+          <div class="bar-track"><div class="bar-fill" style="--val:80%"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>Scripting &amp; Automation (PowerShell / Bash)</span><em>75%</em></div>
+          <div class="bar-track"><div class="bar-fill" style="--val:75%"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>Cloud Security Fundamentals</span><em>60%</em></div>
+          <div class="bar-track"><div class="bar-fill" style="--val:60%"></div></div>
+        </div>
+
+        <a href="#projects" class="btn btn-primary">View Projects <svg class="icon"><use href="#i-arrow"/></svg></a>
+      </div>
+
+      <div class="skills-overview reveal">
+        <h3 class="skills-subhead">Skills Overview</h3>
+
+        <p class="tool-group-label">Hands-On Experience</p>
+        <div class="tool-grid">
+          <div class="tool-tile"><svg class="icon"><use href="#i-server"/></svg><span>Windows Server</span></div>
+          <div class="tool-tile"><svg class="icon"><use href="#i-network"/></svg><span>Active Directory</span></div>
+          <div class="tool-tile"><svg class="icon"><use href="#i-terminal"/></svg><span>Linux</span></div>
+          <div class="tool-tile"><svg class="icon"><use href="#i-terminal"/></svg><span>PowerShell</span></div>
+          <div class="tool-tile"><svg class="icon"><use href="#i-terminal"/></svg><span>Bash</span></div>
+          <div class="tool-tile"><svg class="icon"><use href="#i-search"/></svg><span>Nmap</span></div>
+          <div class="tool-tile"><svg class="icon"><use href="#i-shield"/></svg><span>Nessus</span></div>
+          <div class="tool-tile"><svg class="icon"><use href="#i-zap"/></svg><span>MS Sentinel</span></div>
+          <div class="tool-tile"><svg class="icon"><use href="#i-database"/></svg><span>KQL</span></div>
+        </div>
+
+        <p class="tool-group-label">Also Familiar With</p>
+        <div class="tool-grid">
+          <div class="tool-tile dim"><svg class="icon"><use href="#i-terminal"/></svg><span>Kali Linux</span></div>
+          <div class="tool-tile dim"><svg class="icon"><use href="#i-search"/></svg><span>Wireshark</span></div>
+          <div class="tool-tile dim"><svg class="icon"><use href="#i-target"/></svg><span>Metasploit</span></div>
+          <div class="tool-tile dim"><svg class="icon"><use href="#i-lock"/></svg><span>Burp Suite</span></div>
+          <div class="tool-tile dim"><svg class="icon"><use href="#i-box"/></svg><span>Docker</span></div>
+          <div class="tool-tile dim"><svg class="icon"><use href="#i-branch"/></svg><span>Git</span></div>
+          <div class="tool-tile dim"><svg class="icon"><use href="#i-terminal"/></svg><span>Python</span></div>
+          <div class="tool-tile dim"><svg class="icon"><use href="#i-database"/></svg><span>SQL</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROJECTS ===================== -->
+<section class="section" id="projects">
+  <div class="container">
+    <p class="kicker reveal">// Hands-on work</p>
+    <h2 class="section-title reveal">My <span>Projects</span></h2>
+    <p class="section-sub reveal">A selection of labs and security projects from my GitHub, built to practice real-world SOC, network defense, and vulnerability-assessment workflows.</p>
+
+    <div class="project-grid">
+
+      <article class="project-card reveal">
+        <div class="project-icon"><svg class="icon"><use href="#i-shield"/></svg></div>
+        <h3>Cybersecurity Portfolio &amp; Labs</h3>
+        <p>A growing portfolio repo showcasing SOC labs, Active Directory projects, vulnerability assessments, and security research.</p>
+        <div class="tag-row">
+          <span class="tag">Portfolio</span><span class="tag">SOC Labs</span><span class="tag">Security Research</span>
+        </div>
+        <a href="https://github.com/Kevin-pieterson/KevinPeterson-CyberSecurity" target="_blank" rel="noopener" class="card-link">View Code <svg class="icon"><use href="#i-ext"/></svg></a>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-icon"><svg class="icon"><use href="#i-server"/></svg></div>
+        <h3>Active Directory Home Lab</h3>
+        <p>A Windows Server Active Directory home lab demonstrating domain setup, user management, DNS, DHCP, Group Policy, and Windows client integration.</p>
+        <div class="tag-row">
+          <span class="tag">Windows Server</span><span class="tag">PowerShell</span><span class="tag">Group Policy</span>
+        </div>
+        <a href="https://github.com/Kevin-pieterson/Active-Directory-Home-Lab" target="_blank" rel="noopener" class="card-link">View Code <svg class="icon"><use href="#i-ext"/></svg></a>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-icon"><svg class="icon"><use href="#i-search"/></svg></div>
+        <h3>Vulnerability Assessment Lab</h3>
+        <p>A vulnerability assessment project using Nmap and Nessus to identify security weaknesses, analyse findings, and document remediation recommendations.</p>
+        <div class="tag-row">
+          <span class="tag">Nmap</span><span class="tag">Nessus</span><span class="tag">Reporting</span>
+        </div>
+        <a href="https://github.com/Kevin-pieterson/Vulnerability-Assessment-Lab" target="_blank" rel="noopener" class="card-link">View Code <svg class="icon"><use href="#i-ext"/></svg></a>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-icon"><svg class="icon"><use href="#i-zap"/></svg></div>
+        <h3>SOC Lab — Microsoft Sentinel</h3>
+        <p>Microsoft Sentinel SOC lab covering Windows security monitoring, failed-login detection, Azure Monitor Agent integration, and KQL investigation.</p>
+        <div class="tag-row">
+          <span class="tag">MS Sentinel</span><span class="tag">KQL</span><span class="tag">Azure Monitor</span>
+        </div>
+        <a href="https://github.com/Kevin-pieterson/SOC-Lab-Microsoft-Sentinel" target="_blank" rel="noopener" class="card-link">View Code <svg class="icon"><use href="#i-ext"/></svg></a>
+      </article>
+
+    </div>
+
+    <div class="center-cta reveal">
+      <a href="https://github.com/Kevin-pieterson" target="_blank" rel="noopener" class="btn btn-outline">View All Projects on GitHub <svg class="icon"><use href="#i-ext"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CERTIFICATES ===================== -->
+<section class="section section-alt" id="certificates">
+  <div class="container">
+    <p class="kicker reveal">// Verified learning</p>
+    <h2 class="section-title reveal">My <span>Certificates</span></h2>
+    <p class="section-sub reveal">Professional and vocational certifications that validate my cybersecurity and networking foundation. Tap any certificate to view the original.</p>
+
+    <div class="cert-list">
+
+      <a class="cert-row reveal" href="assets/certificates/cert-qualifi-diploma.jpg" target="_blank" rel="noopener">
+        <span class="cert-badge">QL</span>
+        <span class="cert-main">
+          <strong>Qualifi Level 5 Extended Diploma in Cyber Security</strong>
+          <em>Qualifi Ltd · Ofqual Regulated · 240 Credits</em>
+        </span>
+        <span class="cert-meta"><span class="cert-date">Oct 2025</span><span class="cert-verified"><svg class="icon"><use href="#i-check"/></svg>Verified</span></span>
+      </a>
+
+      <a class="cert-row reveal" href="assets/certificates/cert-ethical-hacking.jpg" target="_blank" rel="noopener">
+        <span class="cert-badge">EH</span>
+        <span class="cert-main">
+          <strong>Certificate in Ethical Hacking</strong>
+          <em>WinSYS Networks</em>
+        </span>
+        <span class="cert-meta"><span class="cert-date">May 2025</span><span class="cert-verified"><svg class="icon"><use href="#i-check"/></svg>Verified</span></span>
+      </a>
+
+      <a class="cert-row reveal" href="assets/certificates/cert-linux-admin.jpg" target="_blank" rel="noopener">
+        <span class="cert-badge">LX</span>
+        <span class="cert-main">
+          <strong>Linux Network Administrator with Security</strong>
+          <em>WinSYS Networks</em>
+        </span>
+        <span class="cert-meta"><span class="cert-date">Jan 2025</span><span class="cert-verified"><svg class="icon"><use href="#i-check"/></svg>Verified</span></span>
+      </a>
+
+      <a class="cert-row reveal" href="assets/certificates/cert-mcsa.jpg" target="_blank" rel="noopener">
+        <span class="cert-badge">MS</span>
+        <span class="cert-main">
+          <strong>Microsoft Certified System Administrator (MCSA)</strong>
+          <em>WinSYS Networks</em>
+        </span>
+        <span class="cert-meta"><span class="cert-date">Nov 2024</span><span class="cert-verified"><svg class="icon"><use href="#i-check"/></svg>Verified</span></span>
+      </a>
+
+      <a class="cert-row reveal" href="assets/certificates/cert-ccna.jpg" target="_blank" rel="noopener">
+        <span class="cert-badge">CC</span>
+        <span class="cert-main">
+          <strong>Cisco Certified Network Associate (CCNA)</strong>
+          <em>WinSYS Networks</em>
+        </span>
+        <span class="cert-meta"><span class="cert-date">Oct 2024</span><span class="cert-verified"><svg class="icon"><use href="#i-check"/></svg>Verified</span></span>
+      </a>
+
+      <a class="cert-row reveal" href="assets/certificates/cert-windows-networks.jpg" target="_blank" rel="noopener">
+        <span class="cert-badge">WN</span>
+        <span class="cert-main">
+          <strong>Certificate in Windows Networks</strong>
+          <em>WinSYS Networks</em>
+        </span>
+        <span class="cert-meta"><span class="cert-date">Aug 2024</span><span class="cert-verified"><svg class="icon"><use href="#i-check"/></svg>Verified</span></span>
+      </a>
+
+      <a class="cert-row reveal" href="assets/certificates/cert-computer-hardware.jpg" target="_blank" rel="noopener">
+        <span class="cert-badge">CH</span>
+        <span class="cert-main">
+          <strong>Certificate in Computer Hardware</strong>
+          <em>WinSYS Networks</em>
+        </span>
+        <span class="cert-meta"><span class="cert-date">Jul 2024</span><span class="cert-verified"><svg class="icon"><use href="#i-check"/></svg>Verified</span></span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section class="section" id="contact">
+  <div class="container contact-grid">
+    <div class="contact-copy reveal">
+      <p class="kicker">// Let's talk</p>
+      <h2 class="section-title">Get In <span>Touch</span></h2>
+      <p class="section-sub">Open to Cybersecurity Internship opportunities. Reach out — I usually reply within a day.</p>
+
+      <ul class="contact-list">
+        <li>
+          <span class="hex"><svg class="icon"><use href="#i-mail"/></svg></span>
+          <span><small>Email</small><a href="mailto:pietersonk489@gmail.com">pietersonk489@gmail.com</a></span>
+        </li>
+        <li>
+          <span class="hex"><svg class="icon"><use href="#i-phone"/></svg></span>
+          <span><small>Phone</small><a href="tel:+94781114808">+94 78 111 4808</a></span>
+        </li>
+        <li>
+          <span class="hex"><svg class="icon"><use href="#i-pin"/></svg></span>
+          <span><small>Location</small><span class="static-text">Kotugoda, Sri Lanka · Open to remote</span></span>
+        </li>
+        <li>
+          <span class="hex"><svg class="icon"><use href="#i-linkedin"/></svg></span>
+          <span><small>LinkedIn</small><a href="https://linkedin.com/in/kevin-peterson-cybersecurity" target="_blank" rel="noopener">linkedin.com/in/kevin-peterson-cybersecurity</a></span>
+        </li>
+        <li>
+          <span class="hex"><svg class="icon"><use href="#i-github"/></svg></span>
+          <span><small>GitHub</small><a href="https://github.com/Kevin-pieterson" target="_blank" rel="noopener">github.com/Kevin-pieterson</a></span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="contact-panel reveal">
+      <div class="globe-deco" aria-hidden="true">
+        <svg viewBox="0 0 200 200"><use href="#i-globe" width="200" height="200"/></svg>
+      </div>
+      <h3>Let's Connect</h3>
+      <p>Whether it's an internship opportunity, a SOC challenge, or just a chat about network defense — my inbox is open.</p>
+      <a href="mailto:pietersonk489@gmail.com" class="btn btn-primary">Email Me <svg class="icon"><use href="#i-mail"/></svg></a>
+      <div class="contact-social">
+        <a href="https://linkedin.com/in/kevin-peterson-cybersecurity" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon"><use href="#i-linkedin"/></svg></a>
+        <a href="https://github.com/Kevin-pieterson" target="_blank" rel="noopener" aria-label="GitHub"><svg class="icon"><use href="#i-github"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <a href="#top" class="logo small">KEVIN<span>PETERSON</span></a>
+    <p>&copy; <span id="year"></span> Kevin Peterson. All rights reserved.</p>
+    <div class="footer-social">
+      <a href="https://linkedin.com/in/kevin-peterson-cybersecurity" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon"><use href="#i-linkedin"/></svg></a>
+      <a href="https://github.com/Kevin-pieterson" target="_blank" rel="noopener" aria-label="GitHub"><svg class="icon"><use href="#i-github"/></svg></a>
+      <a href="mailto:pietersonk489@gmail.com" aria-label="Email"><svg class="icon"><use href="#i-mail"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<a href="#top" class="back-to-top" id="back-to-top" aria-label="Back to top">
+  <svg class="icon" style="transform:rotate(-90deg)"><use href="#i-arrow"/></svg>
+</a>
+
+<script src="js/script.js"></script>
+</body>
+</html>
